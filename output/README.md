@@ -45,12 +45,13 @@ import 'package:kd/api.dart';
 
 
 var api_instance = ModelApi();
+var student = Student(); // Student | 
 
 try {
-    var result = api_instance.apiModelGetStudentGet();
+    var result = api_instance.apiModelAddStudentPost(student);
     print(result);
 } catch (e) {
-    print("Exception when calling ModelApi->apiModelGetStudentGet: $e\n");
+    print("Exception when calling ModelApi->apiModelAddStudentPost: $e\n");
 }
 
 ```
@@ -61,6 +62,7 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*ModelApi* | [**apiModelAddStudentPost**](docs//ModelApi.md#apimodeladdstudentpost) | **POST** /api/Model/AddStudent | 
 *ModelApi* | [**apiModelGetStudentGet**](docs//ModelApi.md#apimodelgetstudentget) | **GET** /api/Model/GetStudent | 
 *WeatherForecastApi* | [**weatherForecastGet**](docs//WeatherForecastApi.md#weatherforecastget) | **GET** /WeatherForecast | 
 

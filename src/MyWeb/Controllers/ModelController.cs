@@ -17,5 +17,8 @@ namespace MyWeb.Controllers {
 
         [HttpGet]
         public Student GetStudent() => new Student();
+
+        [HttpPost]
+        public Student AddStudent(Student student) => student;
     }
 }
