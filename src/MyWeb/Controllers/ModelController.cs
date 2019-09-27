@@ -7,6 +7,7 @@ public class Address {
 public class Student {
     public string FirstName { set; get; }
     public string LastName { set; get; }
+    public Address Address { set; get; }
 }
 
 namespace MyWeb.Controllers {

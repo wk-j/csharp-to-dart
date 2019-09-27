@@ -5,11 +5,13 @@ class Student {
   String firstName = null;
   
   String lastName = null;
+  
+  Address address = null;
   Student();
 
   @override
   String toString() {
-    return 'Student[firstName=$firstName, lastName=$lastName, ]';
+    return 'Student[firstName=$firstName, lastName=$lastName, address=$address, ]';
   }
 
   Student.fromJson(Map<String, dynamic> json) {
@@ -24,12 +26,19 @@ class Student {
     } else {
           lastName = json['lastName'];
     }
+    if (json['address'] == null) {
+      address = null;
+    } else {
+      address = Address.fromJson(json['address']);
+    }
   }
 
   Map<String, dynamic> toJson() {
     Map <String, dynamic> json = {};
       json['firstName'] = firstName;
       json['lastName'] = lastName;
+    if (address != null)
+      json['address'] = address;
     return json;
   }
 

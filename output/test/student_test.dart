@@ -16,6 +16,11 @@ void main() {
       // TODO
     });
 
+    // Address address (default value: null)
+    test('to test the property `address`', () async {
+      // TODO
+    });
+
 
   });
 

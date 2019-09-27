@@ -37,6 +37,8 @@ class ApiClient {
           return value is bool ? value : '$value'.toLowerCase() == 'true';
         case 'double':
           return value is double ? value : double.parse('$value');
+        case 'Address':
+          return Address.fromJson(value);
         case 'Student':
           return Student.fromJson(value);
         case 'WeatherForecast':

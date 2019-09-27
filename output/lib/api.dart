@@ -15,6 +15,7 @@ part 'auth/http_basic_auth.dart';
 part 'api/model_api.dart';
 part 'api/weather_forecast_api.dart';
 
+part 'model/address.dart';
 part 'model/student.dart';
 part 'model/weather_forecast.dart';
 

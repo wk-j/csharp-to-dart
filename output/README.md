@@ -67,6 +67,7 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [Address](docs//Address.md)
  - [Student](docs//Student.md)
  - [WeatherForecast](docs//WeatherForecast.md)
 
